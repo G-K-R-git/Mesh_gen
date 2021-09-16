@@ -283,6 +283,7 @@ class MainWindow(QMainWindow):
         self._save_action = self.bar.addAction(qApp.style().standardIcon(QStyle.SP_DialogSaveButton), "Save",
                                                self.on_save)
         self._save_action.setShortcut(QKeySequence.Save)
+
         #         self._open_action = self.bar.addAction(
         #             qApp.style().standardIcon(QStyle.SP_DialogOpenButton), "Open", self.on_open
         #         )
@@ -297,6 +298,7 @@ class MainWindow(QMainWindow):
         #         self.color_action = QAction(self)
         #         self.color_action.triggered.connect(self.on_color_clicked)
         #         self.bar.addAction(self.color_action)
+
         self.setCentralWidget(self.centralWidget)
         main_layout = QtWidgets.QVBoxLayout(self.centralWidget)
         main_layout.addWidget(self.painter_widget)
